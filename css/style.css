@@ -10,8 +10,16 @@ a { text-decoration: none; }
 
 
 
+main{
+    position: relative;
+}
+
 .content-size-g{
     max-width: 1300px;
+    margin: 0 auto;
+}
+.content-size-p{
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -90,7 +98,7 @@ h1 {
     margin-top: 5px;
 }
 
-h3, h1{
+h3, h1,h2{
     text-align: center;
 }
 
@@ -98,6 +106,7 @@ h3, h1{
     font-family: InterSemiBold;
     letter-spacing: 8px;
     color: var(--color-t);
+    font-size: 15px;
 }
 
 .title-txt{
@@ -186,4 +195,62 @@ button.bg-red{
 
 button.bg-green{
     background-color: var(--color-p);
+}
+
+
+
+
+
+
+
+section.history{
+    width: 100%;
+    background-color: var(--color-p);
+    padding: 30px 0px;
+    margin-top: 60px;
+}
+
+
+
+
+section.history .sub-txt{
+    color: #C5C5C5;
+}
+
+section.history h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+section.history p{
+    color: #C5C5C5;
+    font-family: InterRegular;
+    text-align: justify;
+}
+
+
+.btn-notebook{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none; border-radius: 10px;
+    width: 68px; height: 68px;
+    background-color: #049e18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-notebook:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.btn-notebook i{
+    color: #FFF;
+    font-size: 40px;
+}
+.spc-left{
+    margin-left: 25px;
 }
