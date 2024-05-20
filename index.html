@@ -23,21 +23,46 @@
 
             <nav>
                 <ul>
-                    <li> Ferramentas </li>
-                    <li> Sobre </li>
-                    <li> TRADUÇÃO </li>
+                     <li> <a href="#" id="pArticles"> Artigos</a> </li> 
+                     <li> <a href="#" id="pTools"> Ferramentas</a> </li> 
+                     <li> <a href="#" id="pAbout"> Sobre</a> </li> 
+                    <li> 
+                        <button class="translate" onclick="openTranslate()">
+                            <i class="bi bi-translate"></i>
+
+                            <div class="lang-window">
+                                <p id="pLangInfo"> Idioma </p>
+                            </div>
+
+                            <div class="language-window" id="languageWindow">
+                                <p class="pLangagues" id="pLangWindow"> Idiomas </p>
+                                    <div class="language-size" onclick="translateEnglish()">
+                                        <div class="flag-size usa"> </div>
+                                        <p> English - USA </p>
+                                    </div>
+                                    <div class="language-size" onclick="translateEspanol()">
+                                        <div class="flag-size es"> </div>
+                                        <p> Español - ES </p>
+                                    </div>
+                                    <div class="language-size" onclick="translatePortugues()">
+                                        <div class="flag-size br"> </div>
+                                        <p> Português - BR </p>
+                                    </div>
+                            </div>
+                        </button>
+                    </li>
                 </ul>
             </nav>
     
         </div>
     </header>
 
-    <main>
+    <main onclick="cls()">
         <div class="content-size-g">
-            <p class="nav-site"> Home > Ferramentas > <span class="page-slct">Calculadora</span></p>
+            <p class="nav-site" id="pNavSit"> Home > Ferramentas > <span class="page-slct">Calculadora</span></p>
 
             <h3 class="sub-txt"> NUMBERS HOUSE</h3>
-            <h1 class="title-txt"> Calculadora </h1>
+            <h1 class="title-txt" id="pCalc"> Calculadora </h1>
 
 
             <section class="calc-window-size">
@@ -83,32 +108,32 @@
 
             <section class="history">
                 <div class="content-size-p">
-                    <h3 class="sub-txt"> NUMBERS HOUSE APRESENTA:</h3>
-                    <h2 class="title-txt"> Históra da Calculadora </h2>
+                    <h3 class="sub-txt" id="hSubTxt"> NUMBERS HOUSE APRESENTA:</h3>
+                    <h2 class="title-txt" ID="hTxt"> Históra da Calculadora </h2>
 
-                    <p> <span class="spc-left"></span>Atualmente, as funções das calculadora não se limita apenas em realizar cálculos de operadores aritméticos, mas você sabia que as 
+                    <p id="pHistory1"> <span class="spc-left"></span>Atualmente, as funções das calculadora não se limita apenas em realizar cálculos de operadores aritméticos, mas você sabia que as 
                         primeiras calculadoras inventadas só se limitavam em realizar cálculos de adição e subtração?
                         <br> 
                         A Numbers House te convida para ler o resumo da história da calculadora:
                     </p>
                     <br>
-                    <p> <span class="spc-left"></span> Em resumo, a primeira calculadora inventada não é essas que estamos acostumados a interagir. Até o seu nome era diferente.
+                    <p id="pHistory2"> <span class="spc-left"></span> Em resumo, a primeira calculadora inventada não é essas que estamos acostumados a interagir. Até o seu nome era diferente.
                         Estamos falando do Ábaco, a primeira calculadora da história. Sua criação revolucionou a matemática, foi criada pelos chineses 
                         no século 6 a.C, essa ferramenta tinha o poder de realizar cálculos matemáticos de adição e subtração.  </p>
                         <br>
-                    <p> <span class="spc-left"></span> Em 1942, o francês Blaise Pascal obteve a façanha de criar uma nova máquina automática para realizar cálculos. Pascal era filho
+                    <p id="pHistory3"> <span class="spc-left"></span> Em 1942, o francês Blaise Pascal obteve a façanha de criar uma nova máquina automática para realizar cálculos. Pascal era filho
                         de um cobrar de impostos, queria ajudar seu pai a melhorar seu desempenho em seus serviços, como resultado conseguiu desenvolver
                         uma calculadora automática, porém, semelhante ao Ábaco, essa ferramenta só conseguia realizar cálculos de adição e subtração. </p>
                         <br>
-                    <p> <span class="spc-left"></span> Passaram quase 30 anos depois, no ano de 1671 na Alemanha, o filosofo e matemático Gottfried Wilhelm Von Leibniz melhorou o projeto 
+                    <p id="pHistory4"> <span class="spc-left"></span> Passaram quase 30 anos depois, no ano de 1671 na Alemanha, o filosofo e matemático Gottfried Wilhelm Von Leibniz melhorou o projeto 
                         de Pascal desenvolveu um mecanismo denominado de “roda graduada”. Sua obra era uma calculadora capaz de realizar cálculos de
                         adição, subtração, multiplicação, divisão e até mesmo extrair a raiz quadrada. </p>
                         <br>
-                    <p> <span class="spc-left"></span>Vale ressaltar que todas as calculadoras inventadas até agora eram de grande porte, nenhuma era capaz de caber em nossos bolsos. 
+                    <p id="pHistory5"> <span class="spc-left"></span>Vale ressaltar que todas as calculadoras inventadas até agora eram de grande porte, nenhuma era capaz de caber em nossos bolsos. 
                         Esse fato muda em 1947, quando o austríaco Curt Herztark desenvolveu o projeto da primeira calculadora mecânica, reduzindo o seu 
                         tamanho para um copo. </p>
                         <br>
-                    <p> 
+                    <p id="pHistory6"> 
                         <span class="spc-left"></span>Essas foram as principais criações e modificações das calculadoras, a partir do ano de 1973 surgiu as calculadoras eletrônicas. Conforme
                         o decorrer dos anos surgia mais versões evoluída dessas ferramentas, até se transformar no que estamos acostumados em nosso cotidiano.
                         <br>
