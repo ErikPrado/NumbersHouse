@@ -237,7 +237,7 @@ h3, h1,h2{
 .sub-txt{
     font-family: InterSemiBold;
     letter-spacing: 8px;
-    color: var(--color-t);
+    color: var(--color-gray-light);
     font-size: 15px;
 }
 
@@ -253,13 +253,13 @@ h3, h1,h2{
 
 
 /* Calculator | Calculadora | Calculadora */
-.calc-window-size{
+.calc-window-size, .mult-window-size{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.calc-content-size{
+.calc-content-size, .mult-content-size{
     background-color: var(--color-gray-light);
     padding: 25px;
     display: inline-block;
@@ -340,6 +340,72 @@ button.bg-green:hover{
 
 
 
+/* MULTIPLICAÇÃO */
+.mult-size{
+    width: 100%;
+    padding: 15PX;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.mult-content-size input{
+    background-color: var(--color-white);
+    border: 3px solid var(--color-green-principal);
+    padding: 10px;
+    width: 120px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.mult-content-size input:focus{
+    border: 3px solid var(--color-green-principal);
+}
+
+.p-multi-result{
+    font-size: 18px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+}
+
+.color-green{
+    color: var(--color-green-hover)
+}
+
+.mult-content-size .input-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.mult-content-size .t-title{
+    color: var(--color-white);
+    text-align: center;
+    font-family: InterSemiBold;
+    margin-bottom: 15px;
+}
+
+.mult-content-size button{
+    border: none;
+    background-color: var(--color-green-principal);
+    color: var(--color-white);
+    font-size: 20px;
+    font-family: InterSemiBold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mult-content-size button:hover{
+    background-color: var(--color-green-hover);
+    transition: .2s;
+}
+/* MULTIPLICAÇÃO */
+
+
+
 /* Section: History | Sección : Historia | Sessão: História */
 section.history{
     width: 100%;
@@ -361,6 +427,11 @@ section.history p{
     color: #d8d8d8;
     font-family: InterRegular;
     text-align: justify;
+}
+
+section.history .date{
+    color: #a5a5a5;
+    font-size: 15px;
 }
 /* Section: History | Sección : Historia | Sessão: História */
 
