@@ -74,15 +74,31 @@
 
             <section class="mult-window-size">
                 <div class="mult-content-size">
-                    <p class="t-title"> Digite o valor para multiplicar: </p>
+                    <p class="t-title" id="pTxt10"> Digite o valor para multiplicar até 10: </p>
                         <div class="input-btn">
                             <input type="number" id="numberX10" placeholder="Valor:">
-                            <button onclick="calcX10()"> Multiplicar </button>
+                            <button class="calc space-left" onclick="calcX10()" id="pBtnMulti"> Multiplicar </button>
+                            <button class="clear space-left" onclick="clearX10()" id="pBtnClr"> Limpar </button>
                             </div>
 
                             <div class="line-dct"></div>
-                            <div class="mult-size" id="pMultResult">
+                            <div class="mult-size" id="pMultResult"> </div>
+                </div>
+            </section>
+
+            <section class="mult-window-size space-top">
+                <div class="mult-content-size">
+                    <p class="t-title" id="pTxtXY"> Digite os valores para serem multiplicados: </p>
+                        <div class="input">
+                            <input type="number" placeholder="Valor 01:" id="numberXY1">  <p class="p-wht">X</p>
+                            <input type="number" placeholder="Valor 02:" id="numberXY2">  <p class="p-wht">=</p>  <p class="p-wht" id="numberXYResult"></p>
+                            <button class="calc" onclick="calcNumberXY()" id="pBtnMulti2"> Multiplicar </button>
+                            <button class="clear" onclick="clearNumberXY()" id="pBtnClr2"> Limpar </button>
                         </div>
+                            <div class="line-dct"></div>
+                            <div class="mult-size" id="pMultResultXX"> </div>
+
+                        
                 </div>
             </section>
 

@@ -26,8 +26,8 @@ a { text-decoration: none; }
     --color-white-2: #f1f1f1;
 }
 
-body{ background-color: var(--color-white-2);}
-main{ position: relative; }
+body{ background-color: var(--color-white-2); position: relative;}
+main{ position: relative; margin-top: 90px;}
 
 
 
@@ -35,8 +35,11 @@ main{ position: relative; }
 
 /* Header | Encabezamiento | Cabeçalho */
 header{
-    width: 100%; height: 100%;
+    width: 100%;
+    top: 0;
     background-color: #e9e9e9;
+    position: fixed;
+    z-index: 1;
 }
 
 header .content-size-gg{
@@ -252,6 +255,7 @@ h3, h1,h2{
 
 
 
+/* PAGE : Calculator | PÁGIN: Calculadora | PÁGINA: Calculadora */
 /* Calculator | Calculadora | Calculadora */
 .calc-window-size, .mult-window-size{
     display: flex;
@@ -340,69 +344,7 @@ button.bg-green:hover{
 
 
 
-/* MULTIPLICAÇÃO */
-.mult-size{
-    width: 100%;
-    padding: 15PX;
-    background-color: var(--color-white);
-    border-radius: 10px;
-}
 
-.mult-content-size input{
-    background-color: var(--color-white);
-    border: 3px solid var(--color-green-principal);
-    padding: 10px;
-    width: 120px;
-    color: var(--color-black);
-    font-family: InterSemiBold;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    outline: none;
-}
-
-.mult-content-size input:focus{
-    border: 3px solid var(--color-green-principal);
-}
-
-.p-multi-result{
-    font-size: 18px;
-    color: var(--color-black);
-    font-family: InterSemiBold;
-}
-
-.color-green{
-    color: var(--color-green-hover)
-}
-
-.mult-content-size .input-btn{
-    display: flex;
-    gap: 10px;
-}
-
-.mult-content-size .t-title{
-    color: var(--color-white);
-    text-align: center;
-    font-family: InterSemiBold;
-    margin-bottom: 15px;
-}
-
-.mult-content-size button{
-    border: none;
-    background-color: var(--color-green-principal);
-    color: var(--color-white);
-    font-size: 20px;
-    font-family: InterSemiBold;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.mult-content-size button:hover{
-    background-color: var(--color-green-hover);
-    transition: .2s;
-}
-/* MULTIPLICAÇÃO */
 
 
 
@@ -434,7 +376,113 @@ section.history .date{
     font-size: 15px;
 }
 /* Section: History | Sección : Historia | Sessão: História */
+/* PAGE : Calculator | PÁGIN: Calculadora | PÁGINA: Calculadora */
 
+
+
+
+
+/* PAGE : Multiplication | PÁGIN: Multiplicación | PÁGINA: Multipicação */
+.mult-size{
+    width: 100%;
+    padding: 15PX;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.mult-content-size input{
+    background-color: var(--color-white);
+    border: 3px solid var(--color-green-principal);
+    padding: 10px;
+    width: 120px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.mult-content-size input:focus{
+    border: 3px solid var(--color-green-principal);
+}
+
+.p-multi-result, #pMultResultXX{
+    font-size: 18px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+}
+
+.color-green{
+    color: var(--color-green-hover)
+}
+
+.mult-content-size .input{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mult-content-size .btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.space-top{
+    margin-top: 20px;
+}
+
+.space-left{
+    margin-left: 5px;
+}
+
+.mult-content-size .p-wht{
+    font-size: 18px;
+    color: var(--color-white);
+    font-family: InterSemiBold;
+}
+
+.mult-content-size .t-title{
+    color: var(--color-white);
+    text-align: center;
+    font-family: InterSemiBold;
+    margin-bottom: 15px;
+}
+
+.mult-content-size button.clear{
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 20px;
+    font-family: InterSemiBold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mult-content-size button.clear:hover{
+    background-color: var(--color-red-hover);
+    transition: .2s;
+}
+
+.mult-content-size button.calc{
+    border: none;
+    background-color: var(--color-green-principal);
+    color: var(--color-white);
+    font-size: 20px;
+    font-family: InterSemiBold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mult-content-size button.calc:hover{
+    background-color: var(--color-green-hover);
+    transition: .2s;
+}
+/* PAGE : Multiplication | PÁGIN: Multiplicación | PÁGINA: Multipicação */
 
 
 

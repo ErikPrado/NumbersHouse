@@ -20,6 +20,10 @@ function cls(){
 
 
 
+
+// >>>>>>>>>> Function to multiply X up to the 10th place <<<<<<<<<<
+// >>>>>>>>>> Función para multiplicar X hasta el décimo lugar <<<<<<<<<<
+// >>>>>>>>>> Função para multiplicar X até a casa 10 <<<<<<<<<<
 function calcX10(){
     let numberX10 = document.getElementById('numberX10');
     let valorNumberX10 = (numberX10.value);
@@ -51,42 +55,66 @@ function calcX10(){
     `
 
     document.getElementById('pMultResult').innerHTML = `${multiDone}`;
-    
-    numberX10.value = "";
-    numberX10.focus();
-    
+
+}
+// >>>>>>>>>> Function to multiply X up to the 10th place <<<<<<<<<<
+// >>>>>>>>>> Función para multiplicar X hasta el décimo lugar <<<<<<<<<<
+// >>>>>>>>>> Função para multiplicar X até a casa 10 <<<<<<<<<<
+
+
+
+
+
+
+// >>>>>>>>>> Function to multiply X and y <<<<<<<<<<
+// >>>>>>>>>> Función para multiplicar X e y <<<<<<<<<<
+// >>>>>>>>>> Função para multiplicar X e y <<<<<<<<<<
+function calcNumberXY(){
+    let numberXY1 = document.getElementById('numberXY1');
+    let numberXY2 = document.getElementById('numberXY2');
+
+    let valorNumberXY1 = (numberXY1.value);
+    let valorNumberXY2 = (numberXY2.value);
+
+    let result = valorNumberXY1 * valorNumberXY2;
+
+    document.getElementById('numberXYResult').innerHTML=`${result}`;
+
+    document.getElementById('pMultResultXX').innerHTML=`A multiplicação entre <span class="color-green">${valorNumberXY1}</span> e <span class="color-green">${valorNumberXY2}</span> é igual a: <span class="color-green">${result}</span>.`
 }
 
+function clearX10(){
+    let numberX10 = document.getElementById('numberX10');
+    document.getElementById('pMultResult').innerHTML = "";
+    numberX10.value = "";
+    numberX10.focus();
+}
+// >>>>>>>>>> Function to multiply X and y <<<<<<<<<<
+// >>>>>>>>>> Función para multiplicar X e y <<<<<<<<<<
+// >>>>>>>>>> Função para multiplicar X e y <<<<<<<<<<
 
 
 
 
 
+// >>>>>>>>>> Function to clear the numbers X and y <<<<<<<<<<
+// >>>>>>>>>> Función para borrar los números X e y. <<<<<<<<<<
+// >>>>>>>>>> Função para limpar os números X e y <<<<<<<<<<
+function clearNumberXY(){
+    let numberXY1 = document.getElementById('numberXY1');
+    let numberXY2 = document.getElementById('numberXY2');
 
+    numberXY1.value = "";
+    numberXY2.value = "";
 
+    document.getElementById('numberXYResult').innerHTML="";
+    document.getElementById('pMultResultXX').innerHTML="";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    numberXY1.focus();
+}
+// >>>>>>>>>> Function to clear the numbers X and y <<<<<<<<<<
+// >>>>>>>>>> Función para borrar los números X e y. <<<<<<<<<<
+// >>>>>>>>>> Função para limpar os números X e y <<<<<<<<<<
 
 
 
@@ -103,36 +131,69 @@ let pAbout = document.getElementById('pAbout');
 let pMult = document.getElementById('pMult');
 let pNavSit = document.getElementById('pNavSit');
 let hSubTxt = document.getElementById('hSubTxt');
+let pTxt10 = document.getElementById('pTxt10');
+let pTxtXY = document.getElementById('pTxtXY');
+let pBtnMulti = document.getElementById('pBtnMulti');
+let pBtnClr = document.getElementById('pBtnClr');
+let pBtnMulti2 = document.getElementById('pBtnMulti2');
+let pBtnClr2 = document.getElementById('pBtnClr2');
+let numberX10 = document.getElementById('numberX10');
+let numberXY1 = document.getElementById('numberXY1');
+let numberXY2 = document.getElementById('numberXY2');
 function translateEnglish() {
     pMult.innerHTML = 'Multiplication';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplication</span>';
-    hSubTxt.innerHTML = 'NUMBERS HOUSE PRESENTS:'
     pArticles.innerHTML = 'Articles';
     pTools.innerHTML = 'Tools';
     pAbout.innerHTML = 'About';
     pLangInfo.innerHTML = 'Languages';
     pLangWindow.innerHTML = 'Languages';
+    pTxt10.innerHTML = 'Enter the value to multiply up to 10:';
+    pTxtXY.innerHTML = 'Enter the values to be multiplied:';
+    pBtnMulti.innerHTML = 'Multiply';
+    pBtnClr.innerHTML = 'Clear';
+    pBtnMulti2.innerHTML = 'Multiply';
+    pBtnClr2.innerHTML = 'Clear';
+    numberX10.placeholder = "Value:";
+    numberXY1.placeholder = "Value 01:"
+    numberXY2.placeholder = "Value 02:"
 }
 function translateEspanol() {
     pMult.innerHTML = 'Multiplicación';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicación</span>';
-    hSubTxt.innerHTML = 'NUMBERS HOUSE PRESENTA:'
     pArticles.innerHTML = 'Artículos';
     pTools.innerHTML = 'Herramientas';
     pAbout.innerHTML = 'Acerca de';
     pLangInfo.innerHTML = 'Idiomas';
     pLangWindow.innerHTML = 'Idiomas';
+    pTxt10.innerHTML = 'Ingrese el valor para multiplicar hasta 10:';
+    pTxtXY.innerHTML = 'Ingrese los valores a multiplicar:';
+    pBtnMulti.innerHTML = 'Multiplicar';
+    pBtnClr.innerHTML = 'Apagar';
+    pBtnMulti2.innerHTML = 'Multiplicar';
+    pBtnClr2.innerHTML = 'Apagar';
+    numberX10.placeholder = "Valor:";
+    numberXY1.placeholder = "Valor 01:"
+    numberXY2.placeholder = "Valor 02:"
 }
 
 function translatePortugues() {
     pMult.innerHTML = 'Multiplicação';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicação</span>';
-    hSubTxt.innerHTML = 'NUMBERS HOUSE APRESENTA:'
     pArticles.innerHTML = 'Artigos';
     pTools.innerHTML = 'Ferramentas';
     pAbout.innerHTML = 'Sobre';
     pLangInfo.innerHTML = 'Idiomas';
     pLangWindow.innerHTML = 'Idiomas';
+    pTxt10.innerHTML = 'Digite o valor para multiplicar até 10:';
+    pTxtXY.innerHTML = 'Digite os valores para serem multiplicados:';
+    pBtnMulti.innerHTML = 'Multiplicar';
+    pBtnClr.innerHTML = 'Limpar';
+    pBtnMulti2.innerHTML = 'Multiplicar';
+    pBtnClr2.innerHTML = 'Limpar';
+    numberX10.placeholder = "Valor:";
+    numberXY1.placeholder = "Valor 01:"
+    numberXY2.placeholder = "Valor 02:"
 }
 // >>>>>>>>>> function to translate into other languages <<<<<<<<<<
 // >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
