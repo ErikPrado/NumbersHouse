@@ -1,32 +1,42 @@
+// >>>>>>>>>> Commands for operating the calculator <<<<<<<<<<
+// >>>>>>>>>> Comandos para operar la calculadora. <<<<<<<<<<
+// >>>>>>>>>> Comandos para o funcionamento da calculadora <<<<<<<<<<
 var result = document.getElementById('result');
 
-function insert(n){
+function insert(n){ // Insert Numbers | Insertar números | Inserir Números
 var numberx = result.innerHTML;
 result.innerHTML = numberx + n;
 }
 
-function delt(){
+function delt(){ // Delete Numbers | Eliminar Numeros | Deletar Números
     var result = document.getElementById('result');
     result.innerHTML = "";
 }
 
-function resultX(){
-    result
-}
-
-function back(){
+function back(){ // Back Numbers | Borrar Numeros | Apagar Números
     var resultX = result.innerHTML;
     result.innerHTML = resultX.substring(0, resultX.length -1);
 }
 
-function calc(){
+function calc(){ // Calcule Numbers | Calcular Numeros | Calcular Números
     var resultX = result.innerHTML;
 
     if(resultX){
     result.innerHTML = eval(resultX);
     } 
 }
+// >>>>>>>>>> Commands for operating the calculator <<<<<<<<<<
+// >>>>>>>>>> Comandos para operar la calculadora. <<<<<<<<<<
+// >>>>>>>>>> Comandos para o funcionamento da calculadora <<<<<<<<<<
 
+
+
+
+
+
+// >>>>>>>>>> Event when clicking on a specific keyboard button activates the calculator button <<<<<<<<<<
+// >>>>>>>>>> El evento al hacer clic en un botón específico del teclado activa el botón de la calculadora <<<<<<<<<<
+// >>>>>>>>>> Evento ao clicar em algum botão do teclado específico acionar o botão da calculadora <<<<<<<<<<
 document.onkeydown = teclado;
 function teclado(e){
     if (e.keyCode == 48 || e.keyCode == 96 ) { //0
@@ -84,8 +94,17 @@ function teclado(e){
         document.getElementById('btn/').click();
     }
 }
+// >>>>>>>>>> Event when clicking on a specific keyboard button activates the calculator button <<<<<<<<<<
+// >>>>>>>>>> El evento al hacer clic en un botón específico del teclado activa el botón de la calculadora <<<<<<<<<<
+// >>>>>>>>>> Evento ao clicar em algum botão do teclado específico acionar o botão da calculadora <<<<<<<<<<
 
 
+
+
+
+// >>>>>>>>>> Event to open and close language window <<<<<<<<<<
+// >>>>>>>>>> Evento para abrir y cerrar la ventana de idioma. <<<<<<<<<<
+// >>>>>>>>>> Evento para abir e fechar janela de linguagem <<<<<<<<<<
 function openTranslate(){
     if(document.getElementById('languageWindow').style.visibility="hidden"){
         document.getElementById('languageWindow').style.visibility="visible";
@@ -98,8 +117,17 @@ function openTranslate(){
 function cls(){
     document.getElementById('languageWindow').style.visibility="hidden"
 }
+// >>>>>>>>>> Event to open and close language window <<<<<<<<<<
+// >>>>>>>>>> Evento para abrir y cerrar la ventana de idioma. <<<<<<<<<<
+// >>>>>>>>>> Evento para abir e fechar janela de linguagem <<<<<<<<<<
 
 
+
+
+
+// >>>>>>>>>> function to translate into other languages <<<<<<<<<<
+// >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
+// >>>>>>>>>> função de traduzir para outros idiomas <<<<<<<<<<
 let pLangWindow = document.getElementById('pLangWindow');
 let pLangInfo =document.getElementById('pLangInfo');
 let pArticles = document.getElementById('pArticles');
@@ -167,5 +195,7 @@ function translatePortugues() {
     pLangInfo.innerHTML = 'Idiomas';
     pLangWindow.innerHTML = 'Idiomas';
 }
-
+// >>>>>>>>>> function to translate into other languages <<<<<<<<<<
+// >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
+// >>>>>>>>>> função de traduzir para outros idiomas <<<<<<<<<<
 
