@@ -21,6 +21,9 @@ function cls(){
 
 
 
+// >>>>>>>>>> Event to Calculate Simple Rule of 3 (Directly Proportional Quantities). <<<<<<<<<<
+// >>>>>>>>>> Evento para calcular la regla de 3 simple (Cantidades directamente proporcionales). <<<<<<<<<<
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Diretamente Proporcionais). <<<<<<<<<<
 function calcRuleGDP(){
     let rule1GDP = document.getElementById('rule1GDP');
     let rule2GDP = document.getElementById('rule2GDP');
@@ -30,10 +33,10 @@ function calcRuleGDP(){
     let valueRule2GDP = (rule2GDP.value);
     let valueRule3GDP = (rule3GDP.value);
 
-    let multiRuleGPD = valueRule2GDP * valueRule3GDP;
-    let resultRuleGPD = multiRuleGPD / valueRule1GDP;
+    let multiRuleGDP = valueRule2GDP * valueRule3GDP;
+    let resultRuleGDP = multiRuleGDP / valueRule1GDP;
 
-    document.getElementById('pResultRuleGPD').innerHTML = ` <p class="p-result-ruleGPD"> <span class="color-green"> X </span> = ${resultRuleGPD} </p>`
+    document.getElementById('pResultRuleGPD').innerHTML = ` <p class="p-result-ruleGPD"> <span class="color-green"> X </span> = ${resultRuleGDP} </p>`
 }
 
 function clearRuleGPD(){
@@ -50,15 +53,17 @@ function clearRuleGPD(){
     document.getElementById('pResultRuleGPD').innerHTML = "";
     rule1GDP.focus() = "";
 }
+// >>>>>>>>>> Event to Calculate Simple Rule of 3 (Directly Proportional Quantities). <<<<<<<<<<
+// >>>>>>>>>> Evento para calcular la regla de 3 simple (Cantidades directamente proporcionales). <<<<<<<<<<
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Diretamente Proporcionais). <<<<<<<<<<
 
 
 
 
 
-
-
-
-
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Indiretamente Proporcionais). <<<<<<<<<<
+// >>>>>>>>>> Evento para calcular la regla de 3 simple (Cantidades indirectamente proporcionales).. <<<<<<<<<<
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Indiretamente Proporcionais). <<<<<<<<<<
 function calcRuleGIP(){
     let rule1GIP = document.getElementById('rule1GIP');
     let rule2GIP = document.getElementById('rule2GIP');
@@ -88,6 +93,9 @@ function clearRuleGIP(){
     document.getElementById('pResultRuleGIP').innerHTML = "";
     rule1GIP.focus() = "";
 }
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Indiretamente Proporcionais). <<<<<<<<<<
+// >>>>>>>>>> Evento para calcular la regla de 3 simple (Cantidades indirectamente proporcionales).. <<<<<<<<<<
+// >>>>>>>>>> Evento para Calcular Regra de 3 Simples (Grandezas Indiretamente Proporcionais). <<<<<<<<<<
 
 
 
@@ -104,69 +112,93 @@ let pAbout = document.getElementById('pAbout');
 let pMult = document.getElementById('pMult');
 let pNavSit = document.getElementById('pNavSit');
 let hSubTxt = document.getElementById('hSubTxt');
-let pTxt10 = document.getElementById('pTxt10');
-let pTxtXY = document.getElementById('pTxtXY');
-let pBtnMulti = document.getElementById('pBtnMulti');
-let pBtnClr = document.getElementById('pBtnClr');
-let pBtnMulti2 = document.getElementById('pBtnMulti2');
-let pBtnClr2 = document.getElementById('pBtnClr2');
-let numberX10 = document.getElementById('numberX10');
-let numberXY1 = document.getElementById('numberXY1');
-let numberXY2 = document.getElementById('numberXY2');
+let pBtnCalcGDP = document.getElementById('pBtnCalcGDP');
+let pBtnClrGDP = document.getElementById('pBtnClrGDP');
+let pBtnCalcGIP = document.getElementById('pBtnCalcGIP');
+let pBtnClrGIP = document.getElementById('pBtnClrGIP');
+let rule1GIP = document.getElementById('rule1GIP');
+let rule2GIP = document.getElementById('rule2GIP');
+let rule3GIP = document.getElementById('rule3GIP');
+let rule1GDP = document.getElementById('rule1GDP');
+let rule2GDP = document.getElementById('rule2GDP');
+let rule3GDP = document.getElementById('rule3GDP');
+let pTxtRule1 = document.getElementById('pTxtRule1');
+let pTxtRule2 = document.getElementById('pTxtRule2');
+let pTxtRuleGDP = document.getElementById('pTxtRuleGDP');
+let pTxtRuleGIP = document.getElementById('pTxtRuleGIP');
+
+
+
+
 function translateEnglish() {
-    pMult.innerHTML = 'Multiplication';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplication</span>';
+    pMult.innerHTML = 'Simple and Compound Rule of 3';
+    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Rule of 3</span>';
     pArticles.innerHTML = 'Articles';
     pTools.innerHTML = 'Tools';
     pAbout.innerHTML = 'About';
     pLangInfo.innerHTML = 'Languages';
     pLangWindow.innerHTML = 'Languages';
-    pTxt10.innerHTML = 'Enter the value to multiply up to 10:';
-    pTxtXY.innerHTML = 'Enter the values to be multiplied:';
-    pBtnMulti.innerHTML = 'Multiply';
-    pBtnClr.innerHTML = 'Clear';
-    pBtnMulti2.innerHTML = 'Multiply';
-    pBtnClr2.innerHTML = 'Clear';
-    numberX10.placeholder = "Value:";
-    numberXY1.placeholder = "Value 01:"
-    numberXY2.placeholder = "Value 02:"
+    pBtnCalcGDP.innerHTML = 'Calculate';
+    pBtnClrGDP.innerHTML = 'Clear';
+    pBtnCalcGIP.innerHTML = 'Calculate';
+    pBtnClrGIP.innerHTML = 'Clear';
+    rule1GIP.placeholder = "Value 01:";
+    rule2GIP.placeholder = "Value 02:";
+    rule3GIP.placeholder = "Value 03:";
+    rule1GDP.placeholder = "Value 01:";
+    rule2GDP.placeholder = "Value 02:";
+    rule3GDP.placeholder = "Value 03:";
+    pTxtRule1.innerHTML = "Rule of 3";
+    pTxtRule2.innerHTML = "Rule of 3";
+    pTxtRuleGDP.innerHTML = "Directly Proportional Quantities";
+    pTxtRuleGIP.innerHTML = "Indirectly Proportional Quantities";
 }
 function translateEspanol() {
-    pMult.innerHTML = 'Multiplicación';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicación</span>';
-    pArticles.innerHTML = 'Artículos';
-    pTools.innerHTML = 'Herramientas';
-    pAbout.innerHTML = 'Acerca de';
-    pLangInfo.innerHTML = 'Idiomas';
-    pLangWindow.innerHTML = 'Idiomas';
-    pTxt10.innerHTML = 'Ingrese el valor para multiplicar hasta 10:';
-    pTxtXY.innerHTML = 'Ingrese los valores a multiplicar:';
-    pBtnMulti.innerHTML = 'Multiplicar';
-    pBtnClr.innerHTML = 'Apagar';
-    pBtnMulti2.innerHTML = 'Multiplicar';
-    pBtnClr2.innerHTML = 'Apagar';
-    numberX10.placeholder = "Valor:";
-    numberXY1.placeholder = "Valor 01:"
-    numberXY2.placeholder = "Valor 02:"
+    pMult.innerHTML = 'Regla de 3 Simple y Compuesta';
+    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Regla de 3</span>';
+    pArticles.innerHTML = 'Articles';
+    pTools.innerHTML = 'Tools';
+    pAbout.innerHTML = 'About';
+    pLangInfo.innerHTML = 'Languages';
+    pLangWindow.innerHTML = 'Languages';
+    pBtnCalcGDP.innerHTML = 'Calcular';
+    pBtnClrGDP.innerHTML = 'Apagar';
+    pBtnCalcGIP.innerHTML = 'Calcular';
+    pBtnClrGIP.innerHTML = 'Apagar';
+    rule1GIP.placeholder = "Valor 01:";
+    rule2GIP.placeholder = "Valor 02:";
+    rule3GIP.placeholder = "Valor 03:";
+    rule1GDP.placeholder = "Valor 01:";
+    rule2GDP.placeholder = "Valor 02:";
+    rule3GDP.placeholder = "Valor 03:";
+    pTxtRule1.innerHTML = "Regla de 3";
+    pTxtRule2.innerHTML = "Regla de 3";
+    pTxtRuleGDP.innerHTML = "Cantidades Directamente Proporcionales";
+    pTxtRuleGIP.innerHTML = "Cantidades Indirectamente Proporcionales";
 }
 
 function translatePortugues() {
-    pMult.innerHTML = 'Multiplicação';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicação</span>';
-    pArticles.innerHTML = 'Artigos';
-    pTools.innerHTML = 'Ferramentas';
-    pAbout.innerHTML = 'Sobre';
-    pLangInfo.innerHTML = 'Idiomas';
-    pLangWindow.innerHTML = 'Idiomas';
-    pTxt10.innerHTML = 'Digite o valor para multiplicar até 10:';
-    pTxtXY.innerHTML = 'Digite os valores para serem multiplicados:';
-    pBtnMulti.innerHTML = 'Multiplicar';
-    pBtnClr.innerHTML = 'Limpar';
-    pBtnMulti2.innerHTML = 'Multiplicar';
-    pBtnClr2.innerHTML = 'Limpar';
-    numberX10.placeholder = "Valor:";
-    numberXY1.placeholder = "Valor 01:"
-    numberXY2.placeholder = "Valor 02:"
+    pMult.innerHTML = 'Regra de 3 Simples e Composta';
+    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Regra de 3</span>';
+    pArticles.innerHTML = 'Articles';
+    pTools.innerHTML = 'Tools';
+    pAbout.innerHTML = 'About';
+    pLangInfo.innerHTML = 'Languages';
+    pLangWindow.innerHTML = 'Languages';
+    pBtnCalcGDP.innerHTML = 'Calcular';
+    pBtnClrGDP.innerHTML = 'Limpar';
+    pBtnCalcGIP.innerHTML = 'Calcular';
+    pBtnClrGIP.innerHTML = 'Limpar';
+    rule1GIP.placeholder = "Valor 01:";
+    rule2GIP.placeholder = "Valor 02:";
+    rule3GIP.placeholder = "Valor 03:";
+    rule1GDP.placeholder = "Valor 01:";
+    rule2GDP.placeholder = "Valor 02:";
+    rule3GDP.placeholder = "Valor 03:";
+    pTxtRule1.innerHTML = "Regra de 3";
+    pTxtRule2.innerHTML = "Regra de 3";
+    pTxtRuleGDP.innerHTML = "Grandezas Diretamente Proporcionais";
+    pTxtRuleGIP.innerHTML = "Grandezas Indiretamente Proporcionais";
 }
 // >>>>>>>>>> function to translate into other languages <<<<<<<<<<
 // >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<

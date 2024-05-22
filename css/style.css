@@ -555,34 +555,6 @@ section.history .date{
 
 
 
-/* Button: Notebook | Botón: Cuaderno | Botão: Caderno  */
-.btn-notebook{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    border: none; border-radius: 10px;
-    width: 68px; height: 68px;
-    background-color: #049e18;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.btn-notebook:hover{
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.btn-notebook i{
-    color: var(--color-white);
-    font-size: 40px;
-}
-/* Button: Notebook | Botón: Cuaderno | Botão: Caderno  */
-
-
-
-
 
 
 
