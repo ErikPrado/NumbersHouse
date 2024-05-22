@@ -344,6 +344,74 @@ button.bg-green:hover{
 
 
 
+/*  */
+.content-size-r3{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.content-size-r3 .one-column, .content-size-r3 .three-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-size-r3 .two-column{
+    width: 100%;
+    display: flex;
+}
+
+.content-size-r3 .two-column .f-line, .content-size-r3 .two-column .s-line{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.content-size-r3 .two-column .s-line{
+    align-items: end;
+}
+
+.content-size-r3 input, .content-size-r3 .X-input{
+    background-color: var(--color-white);
+    border: 3px solid var(--color-green-principal);
+    padding: 10px;
+    width: 120px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.content-size-r3 .X-input{
+    color: var(--color-green-principal);
+    cursor: auto;
+    padding-right: 15px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+.content-size-r3 input:focus{
+    border: 3px solid var(--color-green-principal);
+}
+
+.input-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.display-flex{
+    display: flex;
+}
+/*  */
+
 
 
 
@@ -407,7 +475,7 @@ section.history .date{
     border: 3px solid var(--color-green-principal);
 }
 
-.p-multi-result, #pMultResultXX{
+.p-multi-result, #pMultResultXX, .p-result-ruleGPD{
     font-size: 18px;
     color: var(--color-black);
     font-family: InterSemiBold;
