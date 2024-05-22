@@ -55,6 +55,44 @@ function clearRuleGPD(){
 
 
 
+
+
+
+
+function calcRuleGIP(){
+    let rule1GIP = document.getElementById('rule1GIP');
+    let rule2GIP = document.getElementById('rule2GIP');
+    let rule3GIP = document.getElementById('rule3GIP');
+
+    let valueRule1GIP = (rule1GIP.value);
+    let valueRule2GIP = (rule2GIP.value);
+    let valueRule3GIP = (rule3GIP.value);
+
+    let multiRuleGIP = valueRule1GIP * valueRule3GIP;
+    let resultRuleGIP = multiRuleGIP / valueRule2GIP;
+
+    document.getElementById('pResultRuleGIP').innerHTML = ` <p class="p-result-ruleGPD"> <span class="color-green"> X </span> = ${resultRuleGIP} </p>`
+}
+
+function clearRuleGIP(){
+    let rule1GIP = document.getElementById('rule1GIP');
+    let rule2GIP = document.getElementById('rule2GIP');
+    let rule3GIP = document.getElementById('rule3GIP');
+    
+
+    rule1GIP.value = "";
+    rule2GIP.value = "";
+    rule3GIP.value = "";
+
+
+    document.getElementById('pResultRuleGIP').innerHTML = "";
+    rule1GIP.focus() = "";
+}
+
+
+
+
+
 // >>>>>>>>>> function to translate into other languages <<<<<<<<<<
 // >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
 // >>>>>>>>>> função de traduzir para outros idiomas <<<<<<<<<<
