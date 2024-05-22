@@ -127,7 +127,7 @@ function translateEnglish() {
     document.getElementById('pTxtRuleGDP').innerHTML = "Greatness You Directly Provide:";
     document.getElementById('pTxtRuleGIP').innerHTML = "Greatness Indirectly You Provide:";
     document.getElementById('hSubTxtSection').innerHTML = 'NUMBERS HOUSE APRESENTA:';
-    document.getElementById('hTxtSection').innerHTML = 'simple rule of three.';
+    document.getElementById('hTxtSection').innerHTML = 'Learning simple rule of three.';
     document.getElementById('subTxtRule1').innerHTML = 'How to calculate?';
     document.getElementById('pRule1').innerHTML = 'The rule of three is a mathematical operation with the purpose of solving many problems that involve two or more quantities, which may be directly proportional quantities or indirectly proportional quantities. <br> Based on this, we can say that the rule of three allows us to find an unidentified value by relating three or more identified values. <br> Numbers House invites you to learn about the rule of three:';
     document.getElementById('pRule2').innerHTML = 'The rule of three is a proportion between two quantities. In other words, the problem will always present two magnitudes, which may be speed and time, sales and profit, etc.';
@@ -180,7 +180,7 @@ function translateEspanol() {
     document.getElementById('pTxtRuleGDP').innerHTML = "Cantidades directamente proporcionales:";
     document.getElementById('pTxtRuleGIP').innerHTML = "Cantidades indirectamente proporcionales:";
     document.getElementById('hSubTxtSection').innerHTML = 'NUMBERS HOUSE PRESENTA:';
-    document.getElementById('hTxtSection').innerHTML = 'Sencilla regla de tres.';
+    document.getElementById('hTxtSection').innerHTML = 'Aprender la regla de tres simple.';
     document.getElementById('subTxtRule1').innerHTML ='¿Como calcular?';
     document.getElementById('pRule1').innerHTML = 'La regla de tres es una operación matemática con el propósito de resolver muchos problemas que involucran dos o más cantidades, las cuales pueden ser cantidades directamente proporcionales o cantidades indirectamente proporcionales. <br> Con base en esto, podemos decir que la regla de tres nos permite encontrar un valor no identificado relacionando tres o más valores identificados. <br> Numbers House te invita a conocer la regla de tres:';
     document.getElementById('pRule2').innerHTML = 'La regla de tres es una proporción entre dos cantidades. Es decir, el problema siempre presentará dos magnitudes, que pueden ser velocidad y tiempo, ventas y beneficio, etc.';
@@ -222,7 +222,7 @@ function translatePortugues() {
     document.getElementById('pTxtRuleGDP').innerHTML = "Grandezas Diretamente Proporcionais:";
     document.getElementById('pTxtRuleGIP').innerHTML = "Grandezas Indiretamente Proporcionais:";
     document.getElementById('hSubTxtSection').innerHTML = 'NUMBERS HOUSE APRESENTA:';
-    document.getElementById('hTxtSection').innerHTML = 'Regra de três simples.';
+    document.getElementById('hTxtSection').innerHTML = 'Aprendendo regra de três simples.';
     document.getElementById('subTxtRule1').innerHTML ='Como calcular?';
     document.getElementById('pRule1').innerHTML = 'A regra de três é uma operação matemática com o propósito de resolver muitos problemas que envolvam duas ou mais grandezas, podendo ser grandezas diretamente proporcionais ou grandezas indiretamente proporcionais. <br> Com base nisso, podemos afirmar que a regra de três nos possibilita encontrar um valor não identificado ao relacionar três ou mais valores identificados. <br> A Numbers House te convida para aprender sobre a regra de três:';
     document.getElementById('pRule2').innerHTML = 'A regra de três é uma proporção entre duas grandezas. Ou seja, a problemática sempre irá apresentar duas grandezas, podendo ser de velocidade e tempo, venda e lucro, etc.';

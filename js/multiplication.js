@@ -80,7 +80,7 @@ function calcNumberXY(){
 
     document.getElementById('numberXYResult').innerHTML=`${result}`;
 
-    document.getElementById('pMultResultXX').innerHTML=`A multiplicação entre <span class="color-green">${valorNumberXY1}</span> e <span class="color-green">${valorNumberXY2}</span> é igual a: <span class="color-green">${result}</span>.`
+    document.getElementById('pMultResultXX').innerHTML=`A multiplicação entre   <span class="color-green"> ${valorNumberXY1}</span>  e <span class="color-green">${valorNumberXY2}</span> é igual a: <span class="color-green">${result}</span>`
 }
 
 function clearX10(){
@@ -123,77 +123,60 @@ function clearNumberXY(){
 // >>>>>>>>>> function to translate into other languages <<<<<<<<<<
 // >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
 // >>>>>>>>>> função de traduzir para outros idiomas <<<<<<<<<<
-let pLangWindow = document.getElementById('pLangWindow');
-let pLangInfo =document.getElementById('pLangInfo');
-let pArticles = document.getElementById('pArticles');
-let pTools = document.getElementById('pTools');
-let pAbout = document.getElementById('pAbout');
-let pMult = document.getElementById('pMult');
-let pNavSit = document.getElementById('pNavSit');
-let hSubTxt = document.getElementById('hSubTxt');
-let pTxt10 = document.getElementById('pTxt10');
-let pTxtXY = document.getElementById('pTxtXY');
-let pBtnMulti = document.getElementById('pBtnMulti');
-let pBtnClr = document.getElementById('pBtnClr');
-let pBtnMulti2 = document.getElementById('pBtnMulti2');
-let pBtnClr2 = document.getElementById('pBtnClr2');
-let numberX10 = document.getElementById('numberX10');
-let numberXY1 = document.getElementById('numberXY1');
-let numberXY2 = document.getElementById('numberXY2');
 function translateEnglish() {
-    pMult.innerHTML = 'Multiplication';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplication</span>';
-    pArticles.innerHTML = 'Articles';
-    pTools.innerHTML = 'Tools';
-    pAbout.innerHTML = 'About';
-    pLangInfo.innerHTML = 'Languages';
-    pLangWindow.innerHTML = 'Languages';
-    pTxt10.innerHTML = 'Enter the value to multiply up to 10:';
-    pTxtXY.innerHTML = 'Enter the values to be multiplied:';
-    pBtnMulti.innerHTML = 'Multiply';
-    pBtnClr.innerHTML = 'Clear';
-    pBtnMulti2.innerHTML = 'Multiply';
-    pBtnClr2.innerHTML = 'Clear';
-    numberX10.placeholder = "Value:";
-    numberXY1.placeholder = "Value 01:"
-    numberXY2.placeholder = "Value 02:"
+    document.getElementById('pMult').innerHTML = 'Multiplication';
+    document.getElementById('pNavSit').innerHTML = 'Main Page > Tools > <span class="page-slct">Multiplication</span>';
+    document.getElementById('pArticles').innerHTML = 'Articles';
+    document.getElementById('pTools').innerHTML = 'Tools';
+    document.getElementById('pAbout').innerHTML = 'About';
+    document.getElementById('pLangInfo').innerHTML = 'Languages';
+    document.getElementById('pLangWindow').innerHTML = 'Languages';
+    document.getElementById('pTxt10').innerHTML = 'Enter the value to multiply up to 10:';
+    document.getElementById('pTxtXY').innerHTML = 'Enter the values to be multiplied:';
+    document.getElementById('pBtnMulti').innerHTML = 'Multiply';
+    document.getElementById('pBtnClr').innerHTML = 'Clear';
+    document.getElementById('pBtnMulti2').innerHTML = 'Multiply';
+    document.getElementById('pBtnClr2').innerHTML = 'Clear';
+    document.getElementById('numberX10').placeholder = "Value:";
+    document.getElementById('numberXY1').placeholder = "Value 01:";
+    document.getElementById('numberXY2').placeholder = "Value 02:";
 }
 function translateEspanol() {
-    pMult.innerHTML = 'Multiplicación';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicación</span>';
-    pArticles.innerHTML = 'Artículos';
-    pTools.innerHTML = 'Herramientas';
-    pAbout.innerHTML = 'Acerca de';
-    pLangInfo.innerHTML = 'Idiomas';
-    pLangWindow.innerHTML = 'Idiomas';
-    pTxt10.innerHTML = 'Ingrese el valor para multiplicar hasta 10:';
-    pTxtXY.innerHTML = 'Ingrese los valores a multiplicar:';
-    pBtnMulti.innerHTML = 'Multiplicar';
-    pBtnClr.innerHTML = 'Apagar';
-    pBtnMulti2.innerHTML = 'Multiplicar';
-    pBtnClr2.innerHTML = 'Apagar';
-    numberX10.placeholder = "Valor:";
-    numberXY1.placeholder = "Valor 01:"
-    numberXY2.placeholder = "Valor 02:"
+    document.getElementById('pMult').innerHTML = 'Multiplicación';
+    document.getElementById('pNavSit').innerHTML = 'Pagina Principal > Herramientas > <span class="page-slct">Multiplicación</span>';
+    document.getElementById('pArticles').innerHTML = 'Artículos';
+    document.getElementById('pTools').innerHTML = 'Herramientas';
+    document.getElementById('pAbout').innerHTML = 'Acerca de';
+    document.getElementById('pLangInfo').innerHTML = 'Idiomas';
+    document.getElementById('pLangWindow').innerHTML = 'Idiomas';
+    document.getElementById('pTxt10').innerHTML = 'Ingrese el valor para multiplicar hasta 10:';
+    document.getElementById('pTxtXY').innerHTML = 'Ingrese los valores a multiplicar:';
+    document.getElementById('pBtnMulti').innerHTML = 'Multiplicar';
+    document.getElementById('pBtnClr').innerHTML = 'Apagar';
+    document.getElementById('pBtnMulti2').innerHTML = 'Multiplicar';
+    document.getElementById('pBtnClr2').innerHTML = 'Apagar';
+    document.getElementById('numberX10').placeholder = "Valor:";
+    document.getElementById('numberXY1').placeholder = "Valor 01:"
+    document.getElementById('numberXY2').placeholder = "Valor 02:"
 }
 
 function translatePortugues() {
-    pMult.innerHTML = 'Multiplicação';
-    pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Multiplicação</span>';
-    pArticles.innerHTML = 'Artigos';
-    pTools.innerHTML = 'Ferramentas';
-    pAbout.innerHTML = 'Sobre';
-    pLangInfo.innerHTML = 'Idiomas';
-    pLangWindow.innerHTML = 'Idiomas';
-    pTxt10.innerHTML = 'Digite o valor para multiplicar até 10:';
-    pTxtXY.innerHTML = 'Digite os valores para serem multiplicados:';
-    pBtnMulti.innerHTML = 'Multiplicar';
-    pBtnClr.innerHTML = 'Limpar';
-    pBtnMulti2.innerHTML = 'Multiplicar';
-    pBtnClr2.innerHTML = 'Limpar';
-    numberX10.placeholder = "Valor:";
-    numberXY1.placeholder = "Valor 01:"
-    numberXY2.placeholder = "Valor 02:"
+    document.getElementById('pMult').innerHTML = 'Multiplicação';
+    document.getElementById('pNavSit').innerHTML = 'Página Principal > Ferramentas > <span class="page-slct">Multiplicação</span>';
+    document.getElementById('pArticles').innerHTML = 'Artigos';
+    document.getElementById('pTools').innerHTML = 'Ferramentas';
+    document.getElementById('pAbout').innerHTML = 'Sobre';
+    document.getElementById('pLangInfo').innerHTML = 'Idiomas';
+    document.getElementById('pLangWindow').innerHTML = 'Idiomas';
+    document.getElementById('pTxt10').innerHTML = 'Digite o valor para multiplicar até 10:';
+    document.getElementById('pTxtXY').innerHTML = 'Digite os valores para serem multiplicados:';
+    document.getElementById('pBtnMulti').innerHTML = 'Multiplicar';
+    document.getElementById('pBtnClr').innerHTML = 'Limpar';
+    document.getElementById('pBtnMulti2').innerHTML = 'Multiplicar';
+    document.getElementById('pBtnClr2').innerHTML = 'Limpar';
+    document.getElementById('numberX10').placeholder = "Valor:";
+    document.getElementById('numberXY1').placeholder = "Valor 01:"
+    document.getElementById('numberXY2').placeholder = "Valor 02:"
 }
 // >>>>>>>>>> function to translate into other languages <<<<<<<<<<
 // >>>>>>>>>> función para traducir a otros idiomas <<<<<<<<<<
