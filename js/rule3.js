@@ -36,6 +36,21 @@ function calcRuleGDP(){
     document.getElementById('pResultRuleGPD').innerHTML = ` <p class="p-result-ruleGPD"> <span class="color-green"> X </span> = ${resultRuleGPD} </p>`
 }
 
+function clearRuleGPD(){
+    let rule1GDP = document.getElementById('rule1GDP');
+    let rule2GDP = document.getElementById('rule2GDP');
+    let rule3GDP = document.getElementById('rule3GDP');
+    
+
+    rule1GDP.value = "";
+    rule2GDP.value = "";
+    rule3GDP.value = "";
+
+
+    document.getElementById('pResultRuleGPD').innerHTML = "";
+    rule1GDP.focus() = "";
+}
+
 
 
 
