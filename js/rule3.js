@@ -131,7 +131,7 @@ let pTxtRuleGIP = document.getElementById('pTxtRuleGIP');
 
 
 function translateEnglish() {
-    pMult.innerHTML = 'Simple and Compound Rule of 3';
+    pMult.innerHTML = 'Simple Rule of 3';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Rule of 3</span>';
     pArticles.innerHTML = 'Articles';
     pTools.innerHTML = 'Tools';
@@ -152,9 +152,10 @@ function translateEnglish() {
     pTxtRule2.innerHTML = "Rule of 3";
     pTxtRuleGDP.innerHTML = "Directly Proportional Quantities";
     pTxtRuleGIP.innerHTML = "Indirectly Proportional Quantities";
+    document.getElementById('pRule1').innerHTML = 'The rule of three is a mathematical operation with the purpose of solving many problems that involve two or more quantities, which may be directly proportional quantities or indirectly proportional quantities. <br> Based on this, we can say that the rule of three allows us to find an unidentified value by relating three or more identified values. <br> Numbers House invites you to learn about the rule of three:'
 }
 function translateEspanol() {
-    pMult.innerHTML = 'Regla de 3 Simple y Compuesta';
+    pMult.innerHTML = 'Regla de 3 Simple';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Regla de 3</span>';
     pArticles.innerHTML = 'Articles';
     pTools.innerHTML = 'Tools';
@@ -178,7 +179,7 @@ function translateEspanol() {
 }
 
 function translatePortugues() {
-    pMult.innerHTML = 'Regra de 3 Simples e Composta';
+    pMult.innerHTML = 'Regra de 3 Simples';
     pNavSit.innerHTML = 'Home > Tools > <span class="page-slct">Regra de 3</span>';
     pArticles.innerHTML = 'Articles';
     pTools.innerHTML = 'Tools';
