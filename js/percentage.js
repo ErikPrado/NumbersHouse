@@ -46,6 +46,33 @@ function percentage1Cls(){
 
 
 
+function percentage2Calc(){
+    let percentageACalc2 = document.getElementById('percentageACalc2');
+    let percentageBCalc2 = document.getElementById('percentageBCalc2');
+
+    let percentageValueACalc2 = (percentageACalc2.value);
+    let percentageValueBCalc2 = (percentageBCalc2.value);
+
+    let multPercentageValueCal2 = percentageValueACalc2 * 100;
+    let resultPercentageValueCal2 = multPercentageValueCal2 / percentageValueBCalc2;
+
+    document.getElementById('pResultPercentage2').innerHTML = `<p class="p-result-percentage"> O valor ${percentageValueACalc2} equivale a: <span class="color-green"> ${resultPercentageValueCal2}%</span> do valor ${percentageValueBCalc2}. </p>`;
+}
+
+function percentage2Cls(){
+    let percentageACalc2 = document.getElementById('percentageACalc2');
+    let percentageBCalc2 = document.getElementById('percentageBCalc2');
+
+    percentageACalc2.value = ";"
+    percentageBCalc2.value = ";"
+
+    document.getElementById('pResultPercentage2').innerHTML = "";
+
+    percentageACalc2.focus();
+
+}
+
+
 
 
 
