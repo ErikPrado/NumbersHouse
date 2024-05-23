@@ -268,6 +268,61 @@ h3, h1,h2{
 
 
 
+.percentage-window-size{
+    background-color: var(--color-gray-light);
+    padding: 25px;
+    display: flex;
+    max-width: 718px;
+    width: 730px;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.btn-div{
+    display: flex;
+    width: 100%;
+}
+
+.percentage-window-size input{
+    background-color: var(--color-white);
+    border: 3px solid var(--color-green-principal);
+    padding: 5px;
+    width: 90px;
+    color: var(--color-black);
+    font-family: InterSemiBold;
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.percentage-window-size .t-title{
+    color: var(--color-white);
+    font-family: InterSemiBold;
+    margin-bottom: 15px;
+}
+
+.div-inpt-btn{
+    display: flex;
+    align-items: center;
+}
+
+
+.percentage-window-size{
+    display: flex;
+}
+
+.margin-input-l{
+    margin-left: 5px;
+}
+
+.margin-input-r{
+    margin-left: 5px;
+}
+
+
 
 
 /* PAGE : Calculator | PÁGIN: Calculadora | PÁGINA: Calculadora */
@@ -414,6 +469,10 @@ button.bg-green:hover{
     border: 3px solid var(--color-green-principal);
 }
 
+.input-p{
+    background-color: red;
+}
+
 .input-btn{
     display: flex;
     justify-content: space-between;
@@ -503,6 +562,12 @@ section.text h4{
     font-family: InterSemiBold;
 }
 
+.p-result-percentage{
+        font-size: 14px;
+        color: var(--color-black);
+        font-family: InterSemiBold;
+}
+
 .color-green{
     color: var(--color-green-hover)
 }
@@ -541,29 +606,29 @@ section.text h4{
     margin-bottom: 15px;
 }
 
-.mult-content-size button.clear{
+.mult-content-size button.clear, .percentage-window-size button.clear{
     border: none;
     background-color: #ffffff00;
     color: var(--color-white);
-    font-size: 20px;
+    font-size: 16px;
     font-family: InterSemiBold;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.mult-content-size button.calc{
+.mult-content-size button.calc, .percentage-window-size button.calc{
     border: none;
     background-color: var(--color-green-principal);
     color: var(--color-white);
-    font-size: 20px;
+    font-size: 16px;
     font-family: InterSemiBold;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.mult-content-size button.calc:hover{
+.mult-content-size button.calc:hover, .percentage-window-size button.calc:hover{
     background-color: var(--color-green-hover);
     transition: .2s;
 }
